@@ -1,0 +1,27 @@
+{
+  "name": "cashcats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martijn397/cashcats.git"
+  },
+  "scripts": {
+   "watch-tailwind": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css -w",
+   "build-tailwind": "npx tailwindcss -i ./src/styles.css -o ./public/styles.min.css --minify"
+   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martijn397/cashcats/issues"
+  },
+  "homepage": "https://github.com/martijn397/cashcats#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.14"
+  }
+}

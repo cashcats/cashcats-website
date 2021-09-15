@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&display=swap" rel="stylesheet"> 
+   <link href="styles.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+   <div>
+      <div class="lg:container mx-0 px-5 md:px-20 lg:px-40 py-10 lg:py-0 pb-96 md:pb-20 flex items-center flex-col md:flex-row min-h-screen text-white relative md:static">
+         <video loop muted autoplay class="fixed top-0 left-0 min-w-full h-full object-cover z-0">
+            <source src="./video/money-480.webm" type="video/webm">
+            <source src="./video/money-480.mp4" type="video/mp4">
+         </video>
+         <div class="fixed top-0 left-0 min-w-full h-full bg-black bg-opacity-50"></div>
+         <div class="flex flex-col md:flex-row top-0 z-10">
+            <div class="flex-1 order-last md:order-first mt-10">
+               <div class="md:mt-20 text-center md:text-left">
+                  <h1 class="text-5xl md:text-6xl font-semibold">$<span class="text-green-400">CASH</span>CATS</h1>
+                  <p class="text-2xl md:text-3xl font-semibold">An open project on SmartBCH</p>
+                  <div class="mt-8 mb-4">
+                     <a href="https://dex.benswap.cash/#/swap?outputCurrency=0x265bD28d79400D55a1665707Fa14A72978FA6043" target="_blank" class="block text-center bg-gradient-to-r from-green-500 to-green-500 hover:from-green-500 hover:to-green-300 text-white font-bold py-4 w-full md:w-3/4 rounded">
+                        BUY $CATS
+                     </a>
+                  </div>
+                  <p class="text-sm uppercase font-semibold">SEP20 Contract address:</p>
+                  <input type="text" value="0x265bd28d79400d55a1665707fa14a72978fa6043" id="address" class="hidden">
+                  <p class="text-xs md:text-base md:float-left md:mr-3 break-all">0x265bd28d79400d55a1665707fa14a72978fa6043</p>
+                  <button onclick="copyAdress()" class="font-semibold hover:text-green-400 focus:text-green-600"><img class="inline" src="img/copy-regular.svg" id="copyIcon" alt="" width="12"> copy</button>
+               </div>
+            </div>
+            <div class="flex-1 flex items-center">
+               <img src="./img/1.png" alt="">
+            </div>
+         </div>
+      </div>
+      <div class="lg:container px-5 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-6 gap-4 mt-[-360px] md:mt-[-120px] xl:mt-[-80px] z-10 relative uppercase text-xs">
+         <a href="https://chartpro.benswap.cash/?token=0x265bd28d79400d55a1665707fa14a72978fa6043" target="_blank" class="hover:bg-opacity-20 hover:bg-green-400 border-2 text-white hover:text-green-400 hover:border-green-400 font-bold py-3 w-full rounded text-center">$CATS Chart</a>
+         <a href="#community" target="_blank" class="hover:bg-opacity-20 hover:bg-green-400 border-2 text-white hover:text-green-400 hover:border-green-400 font-bold py-3 w-full rounded text-center">Community</a>
+         <a href="#donate" target="_blank" class="hover:bg-opacity-20 hover:bg-green-400 border-2 text-white hover:text-green-400 hover:border-green-400 font-bold py-3 w-full rounded text-center">Donate</a>
+         <a href="./files/cashcats-verification-v2.pdf" target="_blank" class="hover:bg-opacity-20 hover:bg-green-400 border-2 text-white hover:text-green-400 hover:border-green-400 font-bold py-3 w-full rounded text-center">Contract verification</a>
+         <a href="./files/love_revolution_v4.pdf" target="_blank" class="hover:bg-opacity-20 hover:bg-green-400 border-2 text-white hover:text-green-400 hover:border-green-400 font-bold py-3 w-full rounded text-center">Whitepaper</a>
+         <a href="https://whybitcoincash.com/" target="_blank" class="hover:bg-opacity-20 hover:bg-green-400 border-2 text-white hover:text-green-400 hover:border-green-400 font-bold py-3 w-full rounded text-center">Why BCH?</a>
+      </div>
+      <div class="bg-gray-200 relative z-10">
+         <div class="lg:container px-5 md:px-20 lg:px-40 mt-[40px] py-20 md:py-40 pb-20 md:pb-20 flex">
+            <div class="w-full sm:w-8/12">
+                  <h2 class="text-3xl md:text-4xl font-semibold text-center sm:text-left">About CashCats</h2><br>
+                  <p class="md:text-lg xl:text-xl">Hey there pretty PussyCat, nice to meet you! Let me tell you a little story about $CATS &amp; Bitcoin Cash.<br><br>
+                  Once upon a time, there was a cryptocurrency called Bitcoin Cash.. The Bitcoin Cash community grew bigger and stronger every day. People were building all kinds of cool things and applications. But then one day a team of developers thought of a cool idea to create a new side chain. A new side-chain where Bitcoin Cash enthusiast could run EVM DApps, And so <a class="text-green-400" href="https://smartbch.org/" target="_blank">SmartBCH</a> was born!<br><br>
+                  Quickly after the launch of SmartBCH, cats from all around the world came together to create a new community called CashCats ($CATS). The $CATS token is a digital asset (SEP20 smart contract) with a fixed supply of 1,000,000,000 tokens ever, no mints no burns. After launching CashCats everyone started telling their friends and CashCats quickly became a great success! Suddenly, we had a lot of community members wanting to adopt some $CATS. So we started distributing $CATS to the community in a free and fair manner:</p>
+                  <ul class="text-xl my-5 list-inside list-disc">
+                     <li>On day 1 we sent 1,000,000 $CATS to anyone who asked, for free!</li>
+                     <li>On day 2 we sent 100,000 $CATS to anyone who asked, for free!</li>
+                     <li>On day 3 we sent 10,000 $CATS to anyone who asked, for free!</li>
+                  </ul>
+                  <p class="md:text-lg xl:text-xl">Currently, 875,000,000 $CATS have been distributed, and we are not done!<br><br>
+                  $CATS was also quickly listed as the first project on BenSwap, the first DEX on SmartBCH (Decentralized exchange). Here you can buy, sell, and even put your $CATS to work in a farm to earn yield from cool new DeFi applications!<br><br>
+                  Ultimately, CashCats aims to be an extension of the BCH peer-to-peer electronic cash movement &amp; a mascot for the BCH community. We love $CATS! Our goal is to show as much love &amp; respect as possible to everyone around the world and spread $CATS and introduce SmartBCH to as many people as possible! CashCats is a free and open SmartBCH project, and we welcome every to join!<br><br>
+                  Now, are you ready to join our "Love Revolution"?<br>Come join our journey, and tell a friend to tell a friend!
+                  <br><br><span class="font-semibold">"Love &amp; Respect!"</span>
+                  <br><br><span class="font-semibold">"Always &amp; Forever"</span></p>
+               <img class="absolute hidden xl:block" width="300px" src="./img/paws.svg" alt="">
+            </div>
+            <div class="flex-1 relative hidden sm:block">
+               <img class="absolute top-[-80px]" src="./img/maze.png" alt="">
+            </div>
+         </div>
+      </div>
+      <div class="bg-white relative mt-[-40px]">
+         <div class="xl:container px-5 md:px-20 lg:px-40 mt-[35px] py-20 flex">
+            <div class="flex-1">
+               <h2 class="text-4xl md:text-5xl font-semibold text-center">How to get $CATS</h2><br>
+               <div class="grid grid-row-4 xl:grid-cols-4 divide-y-4 xl:divide-y-0 xl:divide-x-4 divide-green-400 mt-0 xl:mt-20">
+                  <div class="p-10 xl:p-5 text-center">
+                     <h3 class="text-6xl font-semibold">01</h3>
+                     <p class="text-xl font-semibold mb-3">Download a MetaMask Wallet</p>
+                     <p class="mb-6">Download the MetaMask wallet application! It's one of the most popular wallets available. After downloading add the smartBCH network to your wallet! Full detailed instructions for setting up a wallet at Build.Cash</p>
+                     <a href="https://build.cash/smartbchstart/" target="_blank" class="bg-opacity-10 hover:bg-opacity-20 bg-green-400 border-2 px-4 text-green-400 border-green-400 font-bold py-2 w-full rounded text-center">Set up a wallet</a>
+                  </div>
+                  <div class="p-10 xl:p-5 text-center">
+                     <h3 class="text-6xl font-semibold">02</h3>
+                     <p class="text-xl font-semibold mb-3">Send BCH to your smartBCH wallet</p>
+                     <p class="mb-6">Transfer some BCH to you smartBCH wallet through the CoinFLEX bridge. Buy BCH on any exchange, create an account at CoinFLEX. Deposit your BCH to your CoinFlex wallet. Wait for 1 confirmation, and then withdraw the BCH to your Metamask address (press SEP20 tab at withdraw).</p>
+                     <a href="http://coinflex.com/user-console/register?shareAccountId=WRX64aEC" target="_blank" class="bg-opacity-10 hover:bg-opacity-20 bg-green-400 border-2 px-8 text-green-400 border-green-400 font-bold py-2 w-full rounded text-center">CoinFLEX</a>
+                  </div>
+                  <div class="p-10 xl:p-5 text-center">
+                     <h3 class="text-6xl font-semibold">03</h3>
+                     <p class="text-xl font-semibold mb-3">Swap at Benswap.cash</p>
+                     <p class="mb-6">BenSwap is a decentralized exchange that allows users to swap BCH &amp; other SEP20 tokens for $CATS. Click 'select a token' and pick $CATS from the list. We recommend you to always set Gas to 1.05 Gwei set the slippage tolerance to 2%.</p>
+                     <a href="https://dex.benswap.cash/#/swap?outputCurrency=0x265bD28d79400D55a1665707Fa14A72978FA6043" target="_blank" class="bg-opacity-10 hover:bg-opacity-20 bg-green-400 border-2 px-12 text-green-400 border-green-400 font-bold py-2 w-full rounded text-center">DEX</a>
+                  </div>
+                  <div class="p-10 xl:p-5 text-center">
+                     <h3 class="text-6xl font-semibold">04</h3>
+                     <p class="text-xl font-semibold mb-3">Farm $CATS</p>
+                     <p class="mb-6">Put your $CATS to work in a farm! Add liquidity and stake $CATS LP in the farm! You can stake $CATS with both $BCH and $EBEN for high paying yields!</p>
+                     <a href="https://dex.benswap.cash/#/add/ETH/0x265bD28d79400D55a1665707Fa14A72978FA6043" target="_blank" class="bg-opacity-10 hover:bg-opacity-20 bg-green-400 border-2 px-10 text-green-400 border-green-400 font-bold py-2 w-full rounded text-center">Farms</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="relative z-10">
+         <div class="lg:container px-5 md:px-20 lg:px-40 mt-[35px] py-20 md:py-40 text-center text-white" id="community">
+            <h1 class="text-4xl md:text-6xl font-semibold mb-8">Community</h1>
+            <a href="https://twitter.com/CashCatsBCH" target="_blank" class="inline-block sm:inline mb-5 mx-2 hover:bg-opacity-20 hover:bg-green-400 border-2 px-10 text-white hover:text-green-400 hover:border-green-400 font-bold py-2 rounded text-center">Twitter</a>
+            <a href="https://t.me/CashCats" target="_blank" class="inline-block sm:inline mb-5 mx-2 hover:bg-opacity-20 hover:bg-green-400 border-2 px-10 text-white hover:text-green-400 hover:border-green-400 font-bold py-2 rounded text-center">Telegram</a>
+            <a href="https://brucelee.cash/2021/09/08/catswxq/" target="_blank" class="inline-block sm:inline mx-2 hover:bg-opacity-20 hover:bg-green-400 border-2 px-10 text-white hover:text-green-400 hover:border-green-400 font-bold py-2 rounded text-center">WeChat</a>
+         </div>
+         <div class="lg:container px-5 md:px-20 lg:px-40 pb-20 text-center text-white" id="donate">
+            <h1 class="text-4xl md:text-6xl font-semibold mb-4">Donations</h1>
+            <p class="text-2xl font-semibold xl:w-4/5 mb-8 mx-auto">All donations will be used for further expansion and development of the CashCats project and it’s ecosysteem</p>
+            <div class="flex flex-col md:flex-row justify-center">
+               <div class="px-5 mb-20">
+                  <img class="mx-auto mb-5" src="./img/qr-cashaddr.png" width="200px" alt="">
+                  <p class="uppercase text-sm font-semibold">Cashaddr:</p>
+                  <input type="text" value="qzgxh4p5rela7q4lc4rw5y5unjmf03amngm5ljpt0z" id="address_cash" class="hidden">
+                  <p>qzgxh4p5rela7q4lc4rw5y5unjmf03amngm5ljpt0z</p>
+                  <button onclick="copyAdress_cash()" class="font-semibold hover:text-green-400 focus:text-green-600"><img class="inline" src="img/copy-regular.svg" id="copyIcon_cash" alt="" width="12"> copy</button>
+               </div>
+               <div class="px-5 mb-20">
+                  <img class="mx-auto mb-5" src="./img/qr-sep20.png" width="200px" alt="">
+                  <p class="uppercase text-sm font-semibold">SEP20 Address:</p>
+                  <input type="text" value="0x6f4578f62FA17f71cBC188Ea3C6467137945Bea3" id="address_sep20" class="hidden">
+                  <p>0x6f4578f62FA17f71cBC188Ea3C6467137945Bea3</p>
+                  <button onclick="copyAdress_sep20()" class="font-semibold hover:text-green-400 focus:text-green-600"><img class="inline" src="img/copy-regular.svg" id="copyIcon_sep20" alt="" width="12"> copy</button>
+               </div>
+            </div>
+            <p>Please send only BCH and/or SEP20 tokens</p>
+         </div>
+         <div class="lg:container px-5 md:px-20 lg:px-40 pb-20 text-center text-white">
+            <p>Copyright CASHCATS 2021</p>
+            <p>Webdesign <a href="https://t.me/Tijn397" target="_blank">@Tijn397</a></p>
+         </div>
+      </div>
+   </div>
+
+   <script >
+      function copyAdress() {
+         var copyText = document.getElementById("address");
+
+         copyText.select();
+         copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+         navigator.clipboard.writeText(copyText.value);
+
+         document.getElementById("copyIcon").src = "img/check-circle-solid.svg";
+      }
+
+      function copyAdress_sep20() {
+         var copyText = document.getElementById("address_sep20");
+
+         copyText.select();
+         copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+         navigator.clipboard.writeText(copyText.value);
+
+         document.getElementById("copyIcon_sep20").src = "img/check-circle-solid.svg";
+      }
+
+      function copyAdress_cash() {
+         var copyText = document.getElementById("address_cash");
+
+         copyText.select();
+         copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+         navigator.clipboard.writeText(copyText.value);
+
+         document.getElementById("copyIcon_cash").src = "img/check-circle-solid.svg";
+      }
+   </script>
+</body>
+</html>
