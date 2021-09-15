@@ -1,6 +1,6 @@
 {
   "name": "cashcats",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martijn397/cashcats.git"
+    "url": "git+https://github.com/cashcats/cashcats-website.git"
   },
   "scripts": {
    "watch-tailwind": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css -w",
@@ -18,9 +18,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/martijn397/cashcats/issues"
+    "url": "https://github.com/cashcats/cashcats-website"
   },
-  "homepage": "https://github.com/martijn397/cashcats#readme",
+  "homepage": "https://github.com/cashcats/cashcats-website#readme",
   "dependencies": {
     "tailwindcss": "^2.2.14"
   }
